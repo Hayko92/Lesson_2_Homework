@@ -25,11 +25,14 @@ public class Task1 {
             System.out.println("No");
         }
         //3
-        String Acapitalized = A.replace(String.valueOf(A.charAt(0)),
-                String.valueOf(A.charAt(0)).toUpperCase());
-        String Bcapitalized = B.replace(String.valueOf(B.charAt(0)),
-                            String.valueOf(B.charAt(0)).toUpperCase());
+        String aCapitalized = capitalize(A);
+        String bCapitalized = capitalize(B);
 
-              System.out.println(Acapitalized + " " + Bcapitalized);
+              System.out.println(aCapitalized + " " + bCapitalized);
+    }
+
+    private static String capitalize(String s) {
+        return s.replace(String.valueOf(s.charAt(0)),
+                String.valueOf(s.charAt(0)).toUpperCase());
     }
 }

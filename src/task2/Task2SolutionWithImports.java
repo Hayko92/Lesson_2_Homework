@@ -18,8 +18,8 @@ public class Task2SolutionWithImports {
         char[] aChars = a.toLowerCase().toCharArray();
         char[] bChars = b.toLowerCase().toCharArray();
 
-        Arrays.sort(aChars);
-        Arrays.sort(bChars);
+        SortingAlgoritmUtil.selectionSort(aChars);
+        SortingAlgoritmUtil.insertionSort(bChars);
 
         return Arrays.equals(aChars, bChars);
     }

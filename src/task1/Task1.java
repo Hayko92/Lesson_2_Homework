@@ -1,3 +1,5 @@
+package task1;
+
 import java.util.Scanner;
 
 
@@ -8,7 +10,7 @@ Sum the lengths of  and .
 Determine if  is lexicographically larger than  (i.e.: does  come before  in the dictionary?).
 Capitalize the first letter in  and  and print them on a single line, separated by a space.
  */
-public class Solution {
+public class Task1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String A = sc.next();
